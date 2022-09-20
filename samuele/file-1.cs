@@ -1,8 +1,23 @@
-namespace Samuele.E.Un.Figo;
+namespace Com.Sesa.TrainingGit;
 
-public class BravoDev
+public class Person
 {
-  private string aField;
+  private String name;
+  private String surname;
+  private uint age;
 
-  public string AField { get; set; }
+  public String Name { get; private set; }
+  public String Surname { get; private set; }
+
+  public uint Age { get; private set; }
+
+  public Person(
+    String name, 
+    String surname, 
+    uint age
+  ) {
+    this.Name = name;
+    this.Surname = surname;
+    this.Age = age;
+  }
 }
